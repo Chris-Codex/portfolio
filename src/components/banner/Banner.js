@@ -1,9 +1,15 @@
 import React from 'react'
+import LeftBanner from './LeftBanner'
+import RightBanner from './RightBanner'
+
 
 const Banner = () => {
+
+
     return (
-        <section className='w-full h-[800px] pt-10 pb-20 flex border-b-[1px] border-b-black'>
-            Banner
+        <section id='home' className='w-full h-[800px] font-titleFont mt-20  py-20 flex border-b-[1px] border-b-black'>
+            <LeftBanner />
+            <RightBanner />
         </section>
     )
 }
