@@ -7,12 +7,12 @@ const Card = ({ title, desc, icons }) => {
             <div className='h-72 overflow-y-hidden hover:mt-10'>
                 <div className='flex h-full flex-col gap-8 translate-y-14 group-hover:translate-y-0 translate-transform duration-500'>
                     <div>
-                        <span className='text-5xl text-designColor'>{icons}</span>
+                        <span className='text-5xl text-[#7aea39]'>{icons}</span>
                     </div>
                     <div className='flex flex-col gap-6'>
                         <h2 className='text-2xl font-titleFont font-bold text-gray-300'>{title}</h2>
                         <p className='text-base'>{desc}</p>
-                        <span className='text-2xl text-designColor'><HiArrowRight /></span>
+                        <span className='text-2xl text-[#7aea39]'><HiArrowRight /></span>
                     </div>
                 </div>
             </div>

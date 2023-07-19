@@ -36,7 +36,6 @@ const Features = () => {
                     desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry.orem Ipsum has been"
                     icons={<FaGlobe />}
                 />
-                <Card />
             </div>
         </section>
     )
