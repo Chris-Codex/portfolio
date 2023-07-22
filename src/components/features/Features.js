@@ -12,7 +12,7 @@ const Features = () => {
             <Title title="Features" desc="What I Do" />
             <div className='grid grid-cols-3 gap-20'>
                 <Card
-                    title="App Development"
+                    title="Web Development"
                     desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry.orem Ipsum has been"
                     icons={<AiFillAppstore />}
                 />
@@ -20,16 +20,6 @@ const Features = () => {
                     title="Mobile Development"
                     desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry.orem Ipsum has been"
                     icons={<FaMobile />}
-                />
-                <Card
-                    title="SEO Optimization"
-                    desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry.orem Ipsum has been"
-                    icons={<SiProgress />}
-                />
-                <Card
-                    title="SEO Optimization"
-                    desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry.orem Ipsum has been"
-                    icons={<SiAntdesign />}
                 />
                 <Card
                     title="Hosting Websites"

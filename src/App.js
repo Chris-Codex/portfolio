@@ -3,6 +3,9 @@ import Features from "./components/features/Features";
 import Navbar from "./components/navbar/Navbar";
 import Project from "./components/projects/Project";
 import Resume from "./components/resume/Resume";
+import Contact from './components/contact/Contact';
+import Footer from "./components/footer/Footer";
+
 
 
 function App() {
@@ -10,11 +13,12 @@ function App() {
     <div className="w-full h-auto bg-bodyColor text-lightText">
       <Navbar />
       <div className="max-w-screen-2xl mx-auto px-16">
-
         <Banner />
         <Features />
         <Project />
         <Resume />
+        <Contact />
+        <Footer />
       </div>
     </div>
   );

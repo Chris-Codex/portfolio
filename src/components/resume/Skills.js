@@ -1,70 +1,169 @@
 import React from 'react'
 import Title from '../layouts/Title'
 import ResumeCard from './ResumeCard';
+import { motion } from 'framer-motion';
+
 
 
 const Skills = () => {
     return (
-        <section className='w-full mt-20'>
-            <div className='flex items-center justify-center text-center'>
-                <Title title="VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK" desc="Technical Skills" />
-            </div>
-            <div className='flex gap-20'>
-                <div className='w-1/2'>
-                    <div className='py-12 font-titleFont'>
-                        <p className='text-sm text-designColor tracking-[4px]'>1998 - 2010</p>
-                        <p className='text-4xl font-bold'>Education Quality</p>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { duration: 0.5 } }}
+            className="w-full flex  lgl:flex-row gap-10 lgl:gap-20"
+        >
+            <div className="w-full lgl:w-1/2">
+                <div className="py-12 font-titleFont flex flex-col gap-4">
+                    <p className="text-sm text-[#7aea39] tracking-[4px] uppercase">
+                        Features
+                    </p>
+                    <h2 className="text-3xl md:text-4xl font-bold">Technical Skill</h2>
+                </div>
+                <div className="flex flex-col gap-6">
+                    <div className="overflow-x-hidden">
+                        <p className="text-sm uppercase font-medium">React</p>
+                        <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
+                            <motion.span
+                                initial={{ x: "-100%", opacity: 0 }}
+                                animate={{ x: 0, opacity: 1 }}
+                                transition={{ duration: 0.5, delay: 0.5 }}
+                                className="w-full h-full bg-gradient-to-r from-green-300 via-green-600 to-green-[#7aea39] rounded-md relative"
+                            >
+                                <span className="absolute -top-7 right-0">100%</span>
+                            </motion.span>
+                        </span>
                     </div>
-                    <div className='mt-14 w-full h-[1000px] border-l-[6px] border-l-[#000] border-opacity-30 flex flex-col gap-10'>
-                        <ResumeCard
-                            title="AS - Science & Information"
-                            subTitle="Spetriu College (2001 -2005)"
-                            result="4.7645"
-                            desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
-                        />
-                        <ResumeCard
-                            title="AS - Science & Information"
-                            subTitle="Spetriu College (2001 -2005)"
-                            result="4.7645"
-                            desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
-                        />
-                        <ResumeCard
-                            title="AS - Science & Information"
-                            subTitle="Spetriu College (2001 -2005)"
-                            result="4.7645"
-                            desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
-                        />
+                    <div className="overflow-x-hidden">
+                        <p className="text-sm uppercase font-medium">React Native</p>
+                        <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
+                            <motion.span
+                                initial={{ x: "-100%", opacity: 0 }}
+                                animate={{ x: 0, opacity: 1 }}
+                                transition={{ duration: 0.5, delay: 0.5 }}
+                                className="w-[95%] h-full bg-gradient-to-r from-green-300 via-green-600 to-green-[#7aea39]  rounded-md relative"
+                            >
+                                <span className="absolute -top-7 right-0">95%</span>
+                            </motion.span>
+                        </span>
+                    </div>
+                    <div className="overflow-x-hidden">
+                        <p className="text-sm uppercase font-medium">Redux/Context API</p>
+                        <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
+                            <motion.span
+                                initial={{ x: "-100%", opacity: 0 }}
+                                animate={{ x: 0, opacity: 1 }}
+                                transition={{ duration: 0.5, delay: 0.5 }}
+                                className="w-[80%] h-full bg-gradient-to-r from-green-300 via-green-600 to-green-[#7aea39]  rounded-md relative"
+                            >
+                                <span className="absolute -top-7 right-0">80%</span>
+                            </motion.span>
+                        </span>
+                    </div>
+                    <div className="overflow-x-hidden">
+                        <p className="text-sm uppercase font-medium">JAVASCRIPT</p>
+                        <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
+                            <motion.span
+                                initial={{ x: "-100%", opacity: 0 }}
+                                animate={{ x: 0, opacity: 1 }}
+                                transition={{ duration: 0.5, delay: 0.5 }}
+                                className="w-[90%] h-full bg-gradient-to-r from-green-300 via-green-600 to-green-[#7aea39]  rounded-md relative"
+                            >
+                                <span className="absolute -top-7 right-0">90%</span>
+                            </motion.span>
+                        </span>
+                    </div>
+                    <div className="overflow-x-hidden">
+                        <p className="text-sm uppercase font-medium">Typescript</p>
+                        <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
+                            <motion.span
+                                initial={{ x: "-100%", opacity: 0 }}
+                                animate={{ x: 0, opacity: 1 }}
+                                transition={{ duration: 0.5, delay: 0.5 }}
+                                className="w-[70%] h-full bg-gradient-to-r from-green-300 via-green-600 to-green-[#7aea39]  rounded-md relative"
+                            >
+                                <span className="absolute -top-7 right-0">70%</span>
+                            </motion.span>
+                        </span>
                     </div>
                 </div>
+            </div>
 
-                <div className='w-1/2'>
-                    <div className='py-12 font-titleFont'>
-                        <p className='text-sm text-designColor tracking-[4px]'>1998 - 2010</p>
-                        <p className='text-4xl font-bold'>Job Experience</p>
+            <div className="w-full lgl:w-1/2">
+                <div className="py-12 font-titleFont flex flex-col gap-4">
+                    <p className="text-sm text-[#7aea39] tracking-[4px] uppercase">
+                        Features
+                    </p>
+                    <h2 className="text-3xl md:text-4xl font-bold">Development Skill</h2>
+                </div>
+                <div className='className="mt-14 w-full flex flex-col gap-6'>
+                    <div className="overflow-x-hidden">
+                        <p className="text-sm uppercase font-medium">CSS</p>
+                        <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
+                            <motion.span
+                                initial={{ x: "-100%", opacity: 0 }}
+                                animate={{ x: 0, opacity: 1 }}
+                                transition={{ duration: 0.5, delay: 0.5 }}
+                                className="w-[90%] h-full bg-gradient-to-r from-green-300 via-green-600 to-green-[#7aea39]  rounded-md relative"
+                            >
+                                <span className="absolute -top-7 right-0">90%</span>
+                            </motion.span>
+                        </span>
                     </div>
-                    <div className='mt-14 w-full h-[1000px] border-l-[6px] border-l-[#000] border-opacity-30 flex flex-col gap-10'>
-                        <ResumeCard
-                            title="AS - Science & Information"
-                            subTitle="Spetriu College (2001 -2005)"
-                            result="4.7645"
-                            desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
-                        />
-                        <ResumeCard
-                            title="AS - Science & Information"
-                            subTitle="Spetriu College (2001 -2005)"
-                            result="4.7645"
-                            desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
-                        />
-                        <ResumeCard
-                            title="AS - Science & Information"
-                            subTitle="Spetriu College (2001 -2005)"
-                            result="4.7645"
-                            desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
-                        />
+                    <div className="overflow-x-hidden">
+                        <p className="text-sm uppercase font-medium">Tailwind CSS</p>
+                        <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
+                            <motion.span
+                                initial={{ x: "-100%", opacity: 0 }}
+                                animate={{ x: 0, opacity: 1 }}
+                                transition={{ duration: 0.5, delay: 0.5 }}
+                                className="w-[90%] h-full bg-gradient-to-r from-green-300 via-green-600 to-green-[#7aea39]  rounded-md relative"
+                            >
+                                <span className="absolute -top-7 right-0">90%</span>
+                            </motion.span>
+                        </span>
+                    </div>
+                    <div className="overflow-x-hidden">
+                        <p className="text-sm uppercase font-medium">JEST</p>
+                        <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
+                            <motion.span
+                                initial={{ x: "-100%", opacity: 0 }}
+                                animate={{ x: 0, opacity: 1 }}
+                                transition={{ duration: 0.5, delay: 0.5 }}
+                                className="w-[80%] h-full bg-gradient-to-r from-green-300 via-green-600 to-green-[#7aea39]  rounded-md relative"
+                            >
+                                <span className="absolute -top-7 right-0">80%</span>
+                            </motion.span>
+                        </span>
+                    </div>
+                    <div className="overflow-x-hidden">
+                        <p className="text-sm uppercase font-medium">Git</p>
+                        <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
+                            <motion.span
+                                initial={{ x: "-100%", opacity: 0 }}
+                                animate={{ x: 0, opacity: 1 }}
+                                transition={{ duration: 0.5, delay: 0.5 }}
+                                className="w-[70%] h-full bg-gradient-to-r from-green-300 via-green-600 to-green-[#7aea39]  rounded-md relative"
+                            >
+                                <span className="absolute -top-7 right-0">70%</span>
+                            </motion.span>
+                        </span>
+                    </div>
+                    <div className="overflow-x-hidden">
+                        <p className="text-sm uppercase font-medium">Scrum</p>
+                        <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
+                            <motion.span
+                                initial={{ x: "-100%", opacity: 0 }}
+                                animate={{ x: 0, opacity: 1 }}
+                                transition={{ duration: 0.5, delay: 0.5 }}
+                                className="w-[95%] h-full bg-gradient-to-r from-green-300 via-green-600 to-green-[#7aea39]  rounded-md relative"
+                            >
+                                <span className="absolute -top-7 right-0">95%</span>
+                            </motion.span>
+                        </span>
                     </div>
                 </div>
             </div>
-        </section>
+        </motion.div>
     )
 }
 
