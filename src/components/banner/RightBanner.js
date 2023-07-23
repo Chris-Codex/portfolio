@@ -4,9 +4,9 @@ import { bannersImg } from '../../assets'
 
 const RightBanner = () => {
     return (
-        <div className='relative w-1/2 flex justify-end items-center'>
-            <img className='w-[500px] h-[650px] mt-[-110px] z-10 rounded-bl-[20px] rounded-br-[20px]' src={bannersImg} alt='banner-image' />
-            <div className='absolute bottom-0 w-[500px] h-[500px] bg-gradient-to-r from-[#1e2024] to-[#202327] shadow-shadowOne flex justify-center items-center'></div>
+        <div className='relative w-full lgl:w-1/2 flex justify-center items-center lgl:justify-end lgl:items-center bg-[]'>
+            <img className='w-[300px] h-[400px] lgl:w-[500px] lgl:h-[650px] mt-[-80px] z-10 rounded-bl-[20px] rounded-br-[20px]' src={bannersImg} alt='banner-image' />
+            <div className='absolute bottom-0 w-[350px] h-[300px] lgl:w-[500px] lgl:h-[500px]  bg-gradient-to-r from-[#1e2024] to-[#202327] shadow-shadowOne flex justify-center items-center'></div>
         </div>
     )
 }

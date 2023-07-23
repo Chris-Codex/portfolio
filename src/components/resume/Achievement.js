@@ -9,14 +9,14 @@ const Achievement = () => {
         <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 0.5 } }}
-            className="py-12 font-titleFont flex gap-20"
+            className="lgl:py-12 font-titleFont flex flex-col lgl:flex-row lgl:gap-20"
         >
-            <div className="w-1/2">
-                <div className="py-12 font-titleFont flex flex-col gap-4">
+            <div className="w-full lgl:w-1/2">
+                <div className="py-12 font-titleFont flex flex-col gap-1 lgl:gap-4">
                     <p className="text-sm text-[#7aea39] tracking-[4px]">May 3, 2023</p>
                     <h2 className="text-4xl font-bold">Professional Certificate</h2>
                 </div>
-                <div className="mt-[180px] w-full h-auto border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
+                <div className="w-full h-auto border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
                     <ResumeCard
                         title="Professional Scrum Master I"
                         subTitle="Certified Scrum Master"
@@ -26,9 +26,9 @@ const Achievement = () => {
                 </div>
             </div>
 
-            <div className="w-1/2">
-                <div className="mt-[230px] w-full h-auto border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
-                    <img src={scrumImg} alt="Scrum Certificatte" />
+            <div className="w-full lgl:w-1/2">
+                <div className="mt-[80px] lgl:mt-[170px] w-full h-auto border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
+                    <img src={scrumImg} className="w-full h-auto" alt="Scrum Certificatte" />
                 </div>
             </div>
 

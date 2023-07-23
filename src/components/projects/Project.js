@@ -9,7 +9,7 @@ const Project = () => {
             <div className='flex items-center justify-center text-center'>
                 <Title title="VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK" desc="My Projects" />
             </div>
-            <div className='grid grid-cols-3 gap-28'>
+            <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-28'>
                 <ProjectCard
                     title="SOCIAL MEDIA CLONE"
                     des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
