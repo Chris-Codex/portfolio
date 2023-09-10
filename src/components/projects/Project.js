@@ -10,19 +10,24 @@ const Project = () => {
                 <Title title="VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK" desc="My Projects" />
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-28'>
-                <ProjectCard
-                    title="SOCIAL MEDIA CLONE"
-                    des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                <a href='https://recipe-generator-seven.vercel.app/' target='_blank'>
+                    <ProjectCard
+                        title="RECIPE GENERATOR"
+                        des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+                        src={projectOne}
+                    />
+                </a>
+
+                <a href='https://multi-shop-kappa.vercel.app/' target='_blank'>
+                    <ProjectCard
+                        title="E-commerce Website"
+                        des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-                    src={projectOne}
-                />
-                <ProjectCard
-                    title="E-commerce Website"
-                    des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-                    src={projectTwo}
-                />
-                <ProjectCard
+                        src={projectTwo}
+                    />
+                </a>
+                {/* <ProjectCard
                     title="Chatting App"
                     des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
@@ -45,9 +50,9 @@ const Project = () => {
                     des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
                     src={projectTwo}
-                />
+                /> */}
             </div>
-        </section>
+        </section >
     )
 }
 

@@ -14,14 +14,14 @@ const LeftBanner = () => {
     });
     return (
         <div className='w-full lgl:w-1/2 flex flex-col mt-10 gap-20'>
-            <div className='flex flex-col gap-5'>
+            <div className='w-full flex flex-col gap-5'>
                 <h4 className='text-lg font-normal'>WELCOME TO MY PORTFOLIO</h4>
-                <h1 className='text-6xl font-bold text-white'>Hi, I'm <span className='text-[#7aea39] capitalize'>Christian Iheacho</span></h1>
+                <h1 className='text-6xl font-bold text-white'>Hi, I'm <span className='text-[#ff014f] capitalize'>Christian Iheacho</span></h1>
                 <h2 className='text-4xl font-bold text-white'>a <span>{text}</span>
                     <Cursor
                         cursorBlinking="false"
                         cursorStyle="|"
-                        cursorColor='#7aea39'
+                        cursorColor='#ff014f'
                     />
                 </h2>
                 <p className='text-base font font-bodyFont leading-6 tracking-wide'>

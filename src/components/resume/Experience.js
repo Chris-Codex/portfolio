@@ -11,7 +11,7 @@ const Experience = () => {
         >
             <div className="w-full lgl:w-1/2">
                 <div className="flex flex-col gap-4">
-                    <p className="text-sm text-[#7aea39] tracking-[4px]">2015 - Present</p>
+                    <p className="text-sm text-[#ff014f] tracking-[4px]">2015 - Present</p>
                     <h2 className="text-4xl font-bold">Job Experience</h2>
                 </div>
                 <div className="mt-14 w-full h-auto border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
@@ -32,7 +32,7 @@ const Experience = () => {
 
             <div className="w-full lgl:w-1/2">
                 <div className="flex flex-col gap-4">
-                    <p className="text-sm text-[#7aea39] tracking-[4px]">2015 - 2016</p>
+                    <p className="text-sm text-[#ff014f ] tracking-[4px]">2015 - 2016</p>
                     <h2 className="text-4xl font-bold">Intern Experience</h2>
                 </div>
                 <div className="mt-14 w-full h-auto border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">

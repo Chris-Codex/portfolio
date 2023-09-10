@@ -22,7 +22,7 @@ const Navbar = () => {
                         navLinksData.map((navlink) => {
                             const { _id, title, link } = navlink
                             return (
-                                <li className='text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-[#7aea39] duration-300 ' key={_id}>
+                                <li className='text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-[#ff014f] duration-300 ' key={_id}>
                                     <Link
                                         activeClass='active'
                                         to={link}
@@ -39,7 +39,7 @@ const Navbar = () => {
                 {/*Mobile Nav*/}
                 <span
                     onClick={() => setShowMenu(!showMenu)}
-                    className="text-xl md:hidden mdl:hidden bg-black w-10 h-10 inline-flex items-center justify-center rounded-full text-[#7aea39] cursor-pointer"
+                    className="text-xl md:hidden mdl:hidden bg-black w-10 h-10 inline-flex items-center justify-center rounded-full text-[#ff014f] cursor-pointer"
                 >
                     <FiMenu />
                 </span>
@@ -58,7 +58,7 @@ const Navbar = () => {
                                 {navLinksData.map((item) => (
                                     <li
                                         key={item._id}
-                                        className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300"
+                                        className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-[#ff014f]  duration-300"
                                     >
                                         <Link
                                             onClick={() => setShowMenu(false)}
@@ -92,7 +92,7 @@ const Navbar = () => {
                             </div>
                             <span
                                 onClick={() => setShowMenu(false)}
-                                className="absolute top-4 right-4 text-gray-400 hover:text-designColor duration-300 text-2xl cursor-pointer"
+                                className="absolute top-4 right-4 text-gray-400 hover:text-[#ff014f]  duration-300 text-2xl cursor-pointer"
                             >
                                 <MdClose />
                             </span>

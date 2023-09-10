@@ -7,7 +7,7 @@ const Education = () => {
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 0.5 } }} className='w-full flex flex-col lgl:flex-row gap-10 lgl:gap-20'>
             <div className='w-full xl:w-1/2'>
                 <div className='py-12 font-titleFont'>
-                    <p className='text-sm text-[#7aea39] tracking-[4px]'>2021 - 2022</p>
+                    <p className='text-sm text-[#ff014f] tracking-[4px]'>2021 - 2022</p>
                     <p className='text-4xl font-bold'>Master's Degree</p>
                 </div>
                 <div className='lgl:mt-14 w-full h-auto border-l-[6px] border-l-[#000] border-opacity-30 flex flex-col gap-10'>
@@ -22,7 +22,7 @@ const Education = () => {
 
             <div className='w-full xl:w-1/2'>
                 <div className='py-12 font-titleFont'>
-                    <p className='text-sm text-[#7aea39] tracking-[4px]'>2008 - 2012</p>
+                    <p className='text-sm text-[#ff014f] tracking-[4px]'>2008 - 2012</p>
                     <p className='text-4xl font-bold'>Bachelors Degree</p>
                 </div>
                 <div className='lgl:mt-14 w-full h-auto border-l-[6px] border-l-[#000] border-opacity-30 flex flex-col gap-10'>

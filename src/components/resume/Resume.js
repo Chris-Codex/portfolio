@@ -23,20 +23,20 @@ const Resume = () => {
                         setSkillData(false) &
                         setExperienceData(false) &
                         setAchievementData(false)}
-                        className={`${educationData ? "border-[#7aea39] rounded-lg" : "border-transparent"} resumeLi`}>Education</li>
+                        className={`${educationData ? "border-[#ff014f] rounded-lg" : "border-transparent"} resumeLi`}>Education</li>
                     <li onClick={() =>
                         setEducationData(false) &
                         setSkillData(true) &
                         setExperienceData(false) &
                         setAchievementData(false)}
-                        className={`${skillData ? "border-[#7aea39] rounded-lg" : "border-transparent"} resumeLi`}>Professional Skills</li>
+                        className={`${skillData ? "border-[#ff014f] rounded-lg" : "border-transparent"} resumeLi`}>Professional Skills</li>
                     <li onClick={() =>
                         setEducationData(false) &
                         setSkillData(false) &
                         setExperienceData(true) &
                         setAchievementData(false)}
-                        className={`${experienceData ? "border-[#7aea39] rounded-lg" : "border-transparent"} resumeLi`}>Experience</li>
-                    <li onClick={() => setEducationData(false) & setSkillData(false) & setExperienceData(false) & setAchievementData(true)} className={`${achievementData ? "border-[#7aea39] rounded-lg" : "border-transparent"} resumeLi`}>Achievements</li>
+                        className={`${experienceData ? "border-[#ff014f] rounded-lg" : "border-transparent"} resumeLi`}>Experience</li>
+                    <li onClick={() => setEducationData(false) & setSkillData(false) & setExperienceData(false) & setAchievementData(true)} className={`${achievementData ? "border-[#ff014f] rounded-lg" : "border-transparent"} resumeLi`}>Achievements</li>
                 </ul>
             </div>
             {educationData && <Education />}
